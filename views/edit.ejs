@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book List Edit Page</title>
+</head>
+<body>
+    <h1>Edit Book</h1>
+    <form action="/books/<%=book._id%>?_method=PUT" method="POST">
+        <!-- This generates pre-populated form -->
+      Title: <input type="text" name="title" value="<%=book.title%>" /><br />
+      Author: <input type="text" name="author" value="<%=book.author%>" /><br />
+      Completed: <input type="checkbox" name="completed" <% if(book.completed
+      === true){ %> checked <% } %> />
+      <br />
+      <input type="submit" value="Submit Changes" />
+    </form>
+</body>
+</html>

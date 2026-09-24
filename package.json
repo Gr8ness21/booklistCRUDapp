@@ -1,0 +1,22 @@
+{
+  "name": "booklist",
+  "version": "1.0.0",
+  "description": "Library CRUD App!",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "Paul Chapman",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "dotenv": "^18.0.2",
+    "ejs": "^6.0.1",
+    "express": "^5.2.1",
+    "method-override": "^3.0.0",
+    "mongodb": "^7.6.0",
+    "mongoose": "^9.10.2"
+  }
+}
